@@ -1,6 +1,6 @@
 {
   "name": "dsh-antigravity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Single-account Antigravity provider for DeepSeek Harness, without extra tools",
   "type": "module",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "./client": "./lib/client.js",
     "./package.json": "./package.json"
   },
-  "files": ["index.js", "lib", "dist", "cordis.patch.yml", "UPSTREAM.md"],
+  "files": ["index.js", "model-display-entry.js", "lib", "dist", "cordis.patch.yml", "UPSTREAM.md"],
   "license": "MIT",
   "author": "Yanzuo Lu",
   "repository": { "type": "git", "url": "https://github.com/YanzuoLu/dsh-antigravity.git" },

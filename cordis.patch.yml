@@ -1,3 +1,5 @@
 - insert:
     - id: antigravity
       name: ./dist/host/00f902ec8591/index.js
+    - id: antigravity-model-display-e252cb7b72cd
+      name: ./dist/model-display/e252cb7b72cd/index.js

@@ -10,6 +10,7 @@ This plugin registers **one provider and zero model-facing tools**. It does not 
 - One grant stored through DSH's native credentials service. Refresh rereads the credential under its cross-process writer lock, preserves rotation, observes cancellation, and asks for login again when Google rejects the refresh grant.
 - Authenticated model discovery and a native storage-domain catalog cache, including discovered runtime model enums. The cache restores without network access; login refreshes it, and model requests refresh an expired catalog.
 - Native `PiAiAdapter` message, attachment, tool-result and signed replay conversion, backed by the migrated `pi-antigravity` transport.
+- Model display names omit a redundant trailing `(Antigravity)` because the provider group already identifies the host. A metadata-only entry normalizes cached and refreshed catalogs without replacing the registered provider or mutating model snapshots already captured by active calls. Model IDs, runtime routes and reasoning settings remain unchanged.
 - No browser opens automatically. Importing, mounting, opening settings, and listing cached models do not contact Google.
 - No global fetch/dispatcher replacement. Provider requests retain the host's current HTTP/1.1 and proxy behavior.
 
