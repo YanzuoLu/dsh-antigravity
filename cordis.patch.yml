@@ -1,0 +1,3 @@
+- insert:
+    - id: antigravity
+      name: ./dist/host/00f902ec8591/index.js
